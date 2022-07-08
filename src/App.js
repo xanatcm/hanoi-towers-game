@@ -85,8 +85,8 @@ const App = () => {
 
   const updateTiles = () => {
     setTiles(towerOne.disks.traverse());
-    setTiles(towerTwo.disks.traverse());
-    setTiles(towerThree.disks.traverse());
+    setTilesTwo(towerTwo.disks.traverse());
+    setTilesThree(towerThree.disks.traverse());
   };
 
   const handleDrop = (e) => {
@@ -113,7 +113,7 @@ const App = () => {
     }
   };
 
-  const winCondition = towerThree.disks.length === disks; //COMPLETAR
+  const winCondition = tilesThree.length === disks;
   return (
     <>
       <div className="container">
